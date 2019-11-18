@@ -1,0 +1,9 @@
+@import "cssreset.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,500i,600,800,800i,900,900i&display=swap');
+@import "top-section.css";
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
