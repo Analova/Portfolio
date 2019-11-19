@@ -27,6 +27,31 @@
     border-radius: 10%;
 }
 
+#top .info .circle {
+    position: absolute;
+    border: 20px solid rgba(80, 80, 139, 0.40);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -20%;
+    left: -40%;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+#top .info .filled-circle {
+    position: absolute;
+    background: rgb(224, 167, 170);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 10%;
+    left: -40%;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+
 #top .info h1 {
     position: relative;
     font-size: 2rem;
@@ -58,7 +83,7 @@
     z-index: 10;
 }
 
-#top .img {}
+
 
 #top .img .background-img {
     background: url("../img/landscape.jpeg");
@@ -67,5 +92,6 @@
     background-size: cover;
     width: 100%;
     max-width: 500px;
-    height: 800px
+    height: 800px;
+
 }
