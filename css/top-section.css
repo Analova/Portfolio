@@ -93,3 +93,38 @@
     height: 800px;
 
 }
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+    #top .container {
+
+        padding: 0 10px 80px;
+
+    }
+
+    #top .info .square {
+        display: none
+    }
+
+    #top .img .background-img {
+        height: 100vh
+    }
+}
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+    #top .container {
+
+        padding: 0 10px 80px;
+
+    }
+
+    #top .info .square {
+        display: none
+    }
+
+    #top .img .background-img {
+        height: 100vh
+    }
+}
