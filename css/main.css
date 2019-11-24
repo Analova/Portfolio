@@ -31,15 +31,13 @@ header {
 header .logo {
   font-size: 1.5rem;
   font-weight: 700;
+  color: white;
   text-transform: uppercase;
-  text-decoration: none;
-  background: black;
-  padding: 20px;
-  transition: all 1s ease-in-out;
 }
 
-header .logo:hover {
-  background: rgba(224, 167, 170, 0.5);
+header .logo .name {
+  background: black;
+  padding: 20px;
 }
 
 header .logo a {
@@ -64,4 +62,67 @@ header .header-menu a {
 
 header .header-menu a:hover {
   color: rgba(224, 167, 170, 0.5);
+}
+
+header .menu-btn {
+  font-weight: 700;
+  color: rgb(224, 167, 170);
+  font-size: 2.5rem;
+  justify-content: flex;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 20;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 25px 21px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-menu a:hover {
+  background: rgba(224, 167, 170, 0.5);
+  color: white;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+  header .header-menu {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: flex;
+  }
+
+  header .logo {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+  }
 }
