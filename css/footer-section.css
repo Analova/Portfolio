@@ -1,6 +1,6 @@
 footer {
     background: #f9fafc;
-    padding: 100px 50px;
+    padding: 50px;
 }
 
 footer .social-container {
@@ -8,7 +8,7 @@ footer .social-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 100px;
     margin: 0 auto;
 }
 
